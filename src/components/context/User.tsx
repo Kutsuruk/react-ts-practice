@@ -4,18 +4,11 @@ import {UserContext} from "./UserContext";
 const User = () => {
     const userContext = useContext(UserContext)
     const handleLogin = () => {
-        if (userContext) {
-            userContext.setUser({
-                name: 'Vishwas',
-                email: 'vishwas@mail.com'
-            })
-        }
+        userContext.setUser({
+            name: 'Vishwas',
+            email: 'vishwas@mail.com'})
     }
-    const handleLogout = () => {
-        if (userContext) {
-            userContext.setUser(null)
-        }
-    }
+    const handleLogout = () => userContext.setUser(null)
 
     return(
         <div>
