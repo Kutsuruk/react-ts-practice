@@ -7,6 +7,7 @@ import Heading from "./components/Heading";
 import Oscar from "./components/Oscar";
 import Button from "./components/Button";
 import Input from "./components/Input";
+import Container from "./components/Container";
 
 function App() {
     const person = {
@@ -30,18 +31,7 @@ function App() {
 
   return (
     <div>
-        {/*<Greet name='Alex' messagesCount={11} isLogged={true} />*/}
-        {/*<Person name={person} />*/}
-        {/*<PersonsList names={personsList} />*/}
-        {/*<Status status='loading' />*/}
-        {/*<Heading>Placeholder text</Heading>*/}
-        {/*<Oscar>*/}
-        {/*    <Heading>Oscar goes to Leonardo Dicaprio!</Heading>*/}
-        {/*</Oscar>*/}
-        {/*<Greet name='Wishwas' isLogged={false} />*/}
-
-        <Button handleClick={(event, id) => console.log('button clicked!', event, id)} />
-        <Input value='' handleChange={(event) => console.log(event)} />
+        <Container styles={{ border: '1px solid black', padding: '1rem', textAlign: 'center' }} />
     </div>
   );
 }
