@@ -8,6 +8,7 @@ import Oscar from "./components/Oscar";
 import Button from "./components/Button";
 import Input from "./components/Input";
 import Container from "./components/Container";
+import LoggedIn from "./components/state/LoggedIn";
 
 function App() {
     const person = {
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <div>
-        <Container styles={{ border: '1px solid black', padding: '1rem', textAlign: 'center' }} />
+        <LoggedIn />
     </div>
   );
 }
