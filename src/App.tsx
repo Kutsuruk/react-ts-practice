@@ -19,6 +19,7 @@ import Private from "./components/auth/Private";
 import Profile from "./components/auth/Profile";
 import List from "./components/generics/List";
 import RandomNumber from "./components/restriction/RandomNumber";
+import Toast from "./components/templateliterals/Toast";
 
 function App() {
     const person = {
@@ -42,7 +43,7 @@ function App() {
 
   return (
     <div>
-        <RandomNumber value={-34} isNegative={true} />
+        <Toast position='left-top' />
     </div>
   );
 }
