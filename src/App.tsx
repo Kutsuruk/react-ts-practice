@@ -22,6 +22,7 @@ import RandomNumber from "./components/restriction/RandomNumber";
 import Toast from "./components/templateliterals/Toast";
 import CustomButton from "./components/html/Button";
 import CustomInput from "./components/html/Input";
+import Text from "./components/polymorphic/Text";
 
 function App() {
     const person = {
@@ -45,9 +46,8 @@ function App() {
 
   return (
     <div>
-        <CustomButton variant='primary' onClick={() => console.log('Clicked')}>
-            Primary Button
-        </CustomButton>
+        <Text as='h1' size='lg'>Heading</Text>
+        <Text as='p' size='md' color='secondary'>Paragraph</Text>
     </div>
   );
 }
