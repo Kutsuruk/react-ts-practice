@@ -9,12 +9,12 @@ import Button from "./components/Button";
 import Input from "./components/Input";
 import Container from "./components/Container";
 import LoggedIn from "./components/state/LoggedIn";
-import Counter from "./components/state/Counter";
 import ThemeContextProvider from "./components/context/ThemeContext";
 import Box from "./components/context/Box";
 import UserContextProvider from "./components/context/UserContext";
 import User from "./components/context/User";
 import MutableRef from "./components/ref/MutableRef";
+import Counter from "./components/class/Counter";
 
 function App() {
     const person = {
@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div>
-        <MutableRef />
+        <Counter message='The counter value is' />
     </div>
   );
 }
