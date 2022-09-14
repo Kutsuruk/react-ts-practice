@@ -17,6 +17,7 @@ import MutableRef from "./components/ref/MutableRef";
 import Counter from "./components/class/Counter";
 import Private from "./components/auth/Private";
 import Profile from "./components/auth/Profile";
+import List from "./components/generics/List";
 
 function App() {
     const person = {
@@ -40,7 +41,8 @@ function App() {
 
   return (
     <div>
-        <Private isLoggedIn={true} component={Profile} />
+        <List items={['Batman', 'Spider man', 'Superman']} onClick={(item) => console.log(item)} />
+        <List items={[1, 4, 2]} onClick={(item) => console.log(item)} />
     </div>
   );
 }
