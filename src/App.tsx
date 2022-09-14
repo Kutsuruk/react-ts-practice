@@ -18,6 +18,7 @@ import Counter from "./components/class/Counter";
 import Private from "./components/auth/Private";
 import Profile from "./components/auth/Profile";
 import List from "./components/generics/List";
+import RandomNumber from "./components/restriction/RandomNumber";
 
 function App() {
     const person = {
@@ -41,8 +42,7 @@ function App() {
 
   return (
     <div>
-        <List items={['Batman', 'Spider man', 'Superman']} onClick={(item) => console.log(item)} />
-        <List items={[1, 4, 2]} onClick={(item) => console.log(item)} />
+        <RandomNumber value={-34} isNegative={true} />
     </div>
   );
 }
